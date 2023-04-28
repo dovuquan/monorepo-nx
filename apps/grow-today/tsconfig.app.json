@@ -10,5 +10,18 @@
     "src/**/*.spec.tsx",
     "test-setup.ts"
   ],
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js", "src/**/*.jsx"]
+  "include": [
+    "src/**/*.ts", 
+    "src/**/*.tsx", 
+    "src/**/*.js", 
+    "src/**/*.jsx",
+    "next-env.d.ts",
+    "../../libs/ui-heading/**/*.ts",
+    "../../libs/ui-heading/**/*.tsx",
+  ],
+  "references": [
+    {
+      "path": "../../libs/ui-heading/tsconfig.json"
+    },
+  ]
 }
