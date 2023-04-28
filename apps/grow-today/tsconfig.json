@@ -18,6 +18,9 @@
     },
     {
       "path": "./tsconfig.spec.json"
+    },
+    {
+      "path": "../../libs/ui-heading/tsconfig.json"
     }
   ],
   "exclude": ["node_modules"]

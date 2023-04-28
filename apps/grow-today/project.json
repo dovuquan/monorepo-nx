@@ -24,7 +24,7 @@
       "executor": "@nrwl/react-native:bundle",
       "outputs": ["{options.bundleOutput}"],
       "options": {
-        "entryFile": "src/main.tsx",
+        "entryFile": "src/main.js",
         "platform": "ios",
         "bundleOutput": "dist/apps/grow-today/ios/main.jsbundle"
       }
@@ -54,7 +54,7 @@
       "executor": "@nrwl/react-native:bundle",
       "outputs": ["{options.bundleOutput}"],
       "options": {
-        "entryFile": "src/main.tsx",
+        "entryFile": "src/main.js",
         "platform": "android",
         "bundleOutput": "dist/apps/grow-today/android/main.jsbundle"
       }

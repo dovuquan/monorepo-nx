@@ -5,14 +5,5 @@ echo $APPCENTER_XCODE_PROJECT
 echo $APPCENTER_SOURCE_DIRECTORY
 echo $APPCENTER_REACTNATIVE_PACKAGE
 
+yarn install
 ls -a
-cd ../.. && yarn install
-cd apps/grow-today
-ls -a
-# if [[ $APP_PLATFORM = 'ios' ]]
-# then
-#     ls -a
-#     cd ../.. && yarn install
-#     cd apps/GrowToday
-#     ls -a
-# fi
