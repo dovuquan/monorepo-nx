@@ -7,4 +7,7 @@ echo $APPCENTER_REACTNATIVE_PACKAGE
 
 cd apps/grow-today
 yarn install
+cd ios
+pod install
+cd ../
 ls -a
