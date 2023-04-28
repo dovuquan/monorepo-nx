@@ -10,7 +10,14 @@
     "react-native": "*",
     "react-native-config": "*",
     "react-native-svg": "*",
+    "react-native-svg-transformer": "*",
+    "@react-native-community/cli": "*",
+    "@react-native-community/cli-platform-android": "*",
+    "@react-native-community/cli-platform-ios": "*",
     "metro-config": "*",
+    "metro-react-native-babel-preset": "*",
+    "metro-react-native-babel-transformer": "*",
+    "nx": "*",
     "@react-native-async-storage/async-storage": "*",
     "@testing-library/react": "*"
   }
