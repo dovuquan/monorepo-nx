@@ -5,22 +5,11 @@
   "dependencies": {
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
-    "@nrwl/react-native": "*",
     "react": "*",
     "react-native": "*",
     "react-native-config": "*",
-    "react-dom": "*",
-    "@nrwl/react": "*",
     "react-native-svg": "*",
-    "metro-resolver": "*",
-    "react-native-svg-transformer": "*",
-    "@react-native-community/cli": "*",
-    "@react-native-community/cli-platform-android": "*",
-    "@react-native-community/cli-platform-ios": "*",
     "metro-config": "*",
-    "metro-react-native-babel-preset": "*",
-    "metro-react-native-babel-transformer": "*",
-    "nx": "*",
     "@react-native-async-storage/async-storage": "*",
     "@testing-library/react": "*"
   }
