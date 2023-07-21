@@ -24,7 +24,7 @@ workflows:
                 echo "sdk.dir=$ANDROID_SDK_ROOT" > "$CM_BUILD_DIR/apps/mobile-app/android/local.properties"            
             - name: Build Android release
               script: |
-                cd android
+                npm install && cd android
                 ./gradlew bundleRelease
         artifacts:
             - android/app/build/outputs/**/*.aab
