@@ -2,7 +2,7 @@
 # Please review and update values
 
 workflows:
-    working_directory: mobile-app
+    working_directory: "apps/mobile-app"
     react-native-android:
         name: Mobile App Android
         max_build_duration: 120
