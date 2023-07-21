@@ -150,7 +150,7 @@ local.properties
 node_modules/
 npm-debug.log
 yarn-error.log
-apps/grow-today/node_modules/
+apps/mobile-app/node_modules/
 /node_module
 
 # fastlane
@@ -170,7 +170,7 @@ apps/grow-today/node_modules/
 
 # Ruby / CocoaPods
 /ios/Pods/
-/apps/grow-today/ios/Pods/
+/apps/mobile-app/ios/Pods/
 /vendor/bundle/
 
 # Temporary files created by Metro to check the health of the file watcher
