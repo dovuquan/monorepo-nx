@@ -29,7 +29,7 @@ workflows:
                 npm install && cd android
                 ./gradlew bundleRelease
         artifacts:
-            - android/app/build/outputs/**/*.aab
+            - apps/mobile-app/android/app/build/outputs/**/*.aab
         publishing:
           email:
             recipients:
