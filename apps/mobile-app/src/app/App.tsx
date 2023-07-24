@@ -11,7 +11,7 @@ import {
   Linking,
 } from "react-native";
 import Svg, { Path } from "react-native-svg";
-// import { UiHeading } from '@package/ui-heading';
+import { UiHeading } from '@package/ui-heading';
 
 export const App = () => {
   const [whatsNextYCoord, setWhatsNextYCoord] = useState<number>(0);
@@ -33,7 +33,7 @@ export const App = () => {
             <Text style={[styles.textXL, styles.appTitleText]} testID="heading">
               Welcome MobileApp 👋
             </Text>
-            {/* <UiHeading /> */}
+            <UiHeading />
           </View>
           <View style={styles.section}>
             <View style={styles.hero}>
