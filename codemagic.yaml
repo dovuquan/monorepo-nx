@@ -27,9 +27,9 @@ workflows:
               working_directory: apps/mobile-app
               script: |
                 npm install && cd android
-                ./gradlew bundleRelease
+                ./gradlew assembleRelease
         artifacts:
-            - apps/mobile-app/android/app/build/outputs/**/*.aab
+            - apps/mobile-app/android/app/build/outputs/**/*.apk
         publishing:
           email:
             recipients:
