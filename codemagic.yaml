@@ -34,6 +34,8 @@ workflows:
           email:
             recipients:
               - quan.do@asnet.com.vn
+              - trung.phamduc@asnet.com.vn
+              - huy.nguyenvan@asnet.com.vn
             notify:
               success: true     # To not receive a notification when a build succeeds
               failure: false    # To not receive a notification when a build fails
