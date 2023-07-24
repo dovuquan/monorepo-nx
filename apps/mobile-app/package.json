@@ -20,6 +20,7 @@
     "react-native": "*",
     "react-native-config": "*",
     "react-native-svg": "*",
-    "react-native-svg-transformer": "*"
+    "react-native-svg-transformer": "*",
+    "@package/ui-heading": "*"
   }
 }

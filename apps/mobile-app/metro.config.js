@@ -31,7 +31,7 @@ module.exports = (async () => {
       // all the file extensions used for imports other than 'ts', 'tsx', 'js', 'jsx', 'json'
       extensions: [],
       // the project root to start the metro server
-      projectRoot: __dirname,
+      projectRoot: path.resolve(__dirname),
       // Specify folders to watch, in addition to Nx defaults (workspace libraries and node_modules)
       watchFolders: [
         path.resolve(__dirname, "../../libs/ui-heading") 
