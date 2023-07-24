@@ -36,8 +36,7 @@ module.exports = (async () => {
       watchFolders: [
         path.resolve(__dirname, "../../libs/ui-heading"),
         path.resolve(__dirname, "../../libs"),
-        path.resolve(__dirname, "../../libs/ui-heading/src/index.ts"),
-        path.resolve(__dirname, "../../libs/ui-heading/src") 
+        path.resolve(__dirname, "../../libs/ui-heading/src")  
       ],
     }
   );
