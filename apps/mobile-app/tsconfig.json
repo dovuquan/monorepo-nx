@@ -11,9 +11,7 @@
     "declaration": true
   },
   "files": ["../../node_modules/@nrwl/react-native/typings/svg.d.ts"],
-  "include": [
-    "../../libs/ui-heading/src/index.ts"
-  ],
+  "include": [],
   "references": [
     {
       "path": "./tsconfig.app.json"
