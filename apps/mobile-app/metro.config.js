@@ -42,7 +42,8 @@ module.exports = (async () => {
       projectRoot: path.resolve(__dirname),
       // Specify folders to watch, in addition to Nx defaults (workspace libraries and node_modules)
       watchFolders: [
-        path.resolve(__dirname, "../../libs/ui-heading"),
+        path.resolve(path.join(__dirname, '../../libs/ui-heading'))
+        // path.resolve(__dirname, "../../libs/ui-heading"),
       ],
     }
   );
