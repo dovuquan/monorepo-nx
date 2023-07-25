@@ -1,3 +1,15 @@
 {
-  "presets": [["module:metro-react-native-babel-preset", { "useTransformReactJSXExperimental": true }]]
+  "presets": [["module:metro-react-native-babel-preset", { "useTransformReactJSXExperimental": true }]],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".json", "svg", "jpg", "jpeg", "png", "gif"],
+        "root": ["./src"],
+        "alias": {      
+          "@package/ui-heading": "../../libs/ui-heading/src"
+        }
+      }
+    ]
+  ]
 }
