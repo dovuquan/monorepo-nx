@@ -5,7 +5,7 @@ const exclusionList = require("metro-config/src/defaults/exclusionList");
 const path = require('path');
 
 const extraNodeModules = {
-  '@package/ui-heading': path.resolve(path.join(__dirname, '../../libs/ui-heading'))
+  '@package/ui-heading': path.resolve(path.join(__dirname, '../../libs/ui-heading/src'))
 };
 const nodeModulesPaths = [path.resolve(path.join(__dirname, './node_modules'))];
 
@@ -42,8 +42,7 @@ module.exports = (async () => {
       projectRoot: path.resolve(__dirname),
       // Specify folders to watch, in addition to Nx defaults (workspace libraries and node_modules)
       watchFolders: [
-        path.resolve(path.join(__dirname, '../../libs/ui-heading'))
-        // path.resolve(__dirname, "../../libs/ui-heading"),
+        path.resolve(__dirname, "../../libs/ui-heading/src"),
       ],
     }
   );
