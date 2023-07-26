@@ -28,6 +28,11 @@ module.exports = (async () => {
       },
       resolver: {
         extraNodeModules: monorepoPackages,
+        disableHierarchicalLookup: true,
+        nodeModulesPaths: [
+          path.resolve(projectRoot, 'node_modules'),
+          path.resolve(workspaceRoot, 'node_modules'),
+        ],
         assetExts: assetExts.filter((ext) => ext !== "svg"),
         sourceExts: [...sourceExts, "svg"],
         blockList: exclusionList([/^(?!.*node_modules).*\/dist\/.*/]),
@@ -42,9 +47,7 @@ module.exports = (async () => {
       // the project root to start the metro server
       projectRoot: projectRoot,
       // Specify folders to watch, in addition to Nx defaults (workspace libraries and node_modules)
-      watchFolders: [
-        path.resolve(workspaceRoot, "libs/ui-heading"),
-      ],
+      watchFolders: [projectRoot, ...Object.values(monorepoPackages)]
     }
   );
 })();
