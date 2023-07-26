@@ -1,10 +1,10 @@
 module.exports = {
-  displayName: "mobile-app",
-  preset: "react-native",
-  resolver: "@nrwl/jest/plugins/resolver",
-  moduleFileExtensions: ["ts", "js", "html", "tsx", "jsx"],
-  setupFilesAfterEnv: ["<rootDir>/test-setup.ts"],
+  displayName: 'mobile-app',
+  preset: 'react-native',
+  resolver: '@nx/jest/plugins/resolver',
+  moduleFileExtensions: ['ts', 'js', 'html', 'tsx', 'jsx'],
+  setupFilesAfterEnv: ['<rootDir>/test-setup.ts'],
   moduleNameMapper: {
-    "\\.svg$": "@nrwl/react-native/plugins/jest/svg-mock",
+    '\\.svg$': '@nx/react-native/plugins/jest/svg-mock',
   },
 };

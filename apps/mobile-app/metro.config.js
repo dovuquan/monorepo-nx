@@ -1,6 +1,6 @@
-const { withNxMetro } = require("@nrwl/react-native");
-const { getDefaultConfig } = require("metro-config");
-const exclusionList = require("metro-config/src/defaults/exclusionList");
+const { withNxMetro } = require('@nx/react-native');
+const { getDefaultConfig } = require('metro-config');
+const exclusionList = require('metro-config/src/defaults/exclusionList');
 
 const path = require('path');
 
@@ -24,7 +24,7 @@ module.exports = (async () => {
             inlineRequires: false,
           },
         }),
-        babelTransformerPath: require.resolve("react-native-svg-transformer"),
+        babelTransformerPath: require.resolve('react-native-svg-transformer'),
       },
       resolver: {
         extraNodeModules: monorepoPackages,
@@ -33,8 +33,8 @@ module.exports = (async () => {
           path.resolve(projectRoot, 'node_modules'),
           path.resolve(workspaceRoot, 'node_modules'),
         ],
-        assetExts: assetExts.filter((ext) => ext !== "svg"),
-        sourceExts: [...sourceExts, "svg"],
+        assetExts: assetExts.filter((ext) => ext !== 'svg'),
+        sourceExts: [...sourceExts, 'svg'],
         blockList: exclusionList([/^(?!.*node_modules).*\/dist\/.*/]),
       },
     },
@@ -47,7 +47,7 @@ module.exports = (async () => {
       // the project root to start the metro server
       projectRoot: projectRoot,
       // Specify folders to watch, in addition to Nx defaults (workspace libraries and node_modules)
-      watchFolders: [projectRoot, ...Object.values(monorepoPackages)]
+      watchFolders: [projectRoot, ...Object.values(monorepoPackages)],
     }
   );
 })();
